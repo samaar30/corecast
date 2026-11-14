@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Corecast — discover videos, music, live creators and community posts.">
+  <title>Corecast — find your next favorite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Corecast home"><span class="brand-symbol">c</span><span>corecast<span class="brand-dot">.</span></span></a>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" data-page="home" class="nav-link active"><span>⌂</span>Home</a>
+        <a href="#live" data-page="live" class="nav-link"><span>◉</span>Live</a>
+        <a href="#music" data-page="music" class="nav-link"><span>♫</span>Music</a>
+        <a href="#shorts" data-page="shorts" class="nav-link"><span>▣</span>Shorts</a>
+        <a href="#posts" data-page="posts" class="nav-link"><span>▤</span>Posts</a>
+      </nav>
+      <div class="header-actions">
+        <form class="search" id="searchForm" role="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search Corecast" aria-label="Search Corecast"><kbd>↵</kbd></form>
+        <button class="icon-button notification-button" aria-label="Notifications">♧<i></i></button>
+        <button class="avatar-button" id="accountButton" aria-label="Account menu">S</button>
+      </div>
+    </header>
+
+    <main id="mainContent" tabindex="-1"></main>
+
+    <footer class="site-footer"><span class="brand-mini">c.</span><span>Made for what you love.</span><span class="footer-note">A free, front-end preview. Uploads and livestreaming are not connected to a server yet.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
